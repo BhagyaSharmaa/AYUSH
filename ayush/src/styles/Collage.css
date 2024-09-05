@@ -1,0 +1,129 @@
+.second-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+  }
+  
+  .image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-collage {
+    position: relative;
+    width: 300px; /* Adjusted width */
+    height: 300px; /* Adjusted height */
+    animation: moveAndOverlay 10s infinite;
+  }
+  
+  .image-collage img {
+    position: absolute;
+    width: 120px; /* Adjusted size */
+    height: 120px; /* Adjusted size */
+    object-fit: cover;
+    opacity: 0.5; /* Increased transparency */
+    border-radius: 15px; /* Rounded edges */
+  }
+  
+  /* Positioning for each image */
+  .image-collage img:nth-child(1) {
+    top: -100px; /* Adjusted for tighter positioning */
+    left: -100px; /* Adjusted for tighter positioning */
+    animation: moveImage1 10s infinite;
+  }
+  
+  .image-collage img:nth-child(2) {
+    top: -100px; /* Adjusted for tighter positioning */
+    right: -100px; /* Adjusted for tighter positioning */
+    animation: moveImage2 10s infinite;
+  }
+  
+  .image-collage img:nth-child(3) {
+    bottom: -100px; /* Adjusted for tighter positioning */
+    left: -100px; /* Adjusted for tighter positioning */
+    animation: moveImage3 10s infinite;
+  }
+  
+  .image-collage img:nth-child(4) {
+    bottom: -100px; /* Adjusted for tighter positioning */
+    right: -100px; /* Adjusted for tighter positioning */
+    animation: moveImage4 10s infinite;
+  }
+  
+  /* Keyframes for moving each image */
+  @keyframes moveImage1 {
+    0%, 100% {
+      opacity: 0.5;
+      top: -100px;
+      left: -100px;
+    }
+    25% {
+      top: 30px; /* Adjusted for tighter placement */
+      left: 30px; /* Adjusted for tighter placement */
+    }
+    75% {
+      top: 30px; /* Adjusted for tighter placement */
+      left: 30px; /* Adjusted for tighter placement */
+    }
+  }
+  
+  @keyframes moveImage2 {
+    0%, 100% {
+      opacity: 0.5;
+      top: -100px;
+      right: -100px;
+    }
+    25% {
+      top: 30px; /* Adjusted for tighter placement */
+      right: 30px; /* Adjusted for tighter placement */
+    }
+    75% {
+      top: 30px; /* Adjusted for tighter placement */
+      right: 30px; /* Adjusted for tighter placement */
+    }
+  }
+  
+  @keyframes moveImage3 {
+    0%, 100% {
+      opacity: 0.5;
+      bottom: -100px;
+      left: -100px;
+    }
+    25% {
+      bottom: 30px; /* Adjusted for tighter placement */
+      left: 30px; /* Adjusted for tighter placement */
+    }
+    75% {
+      bottom: 30px; /* Adjusted for tighter placement */
+      left: 30px; /* Adjusted for tighter placement */
+    }
+  }
+  
+  @keyframes moveImage4 {
+    0%, 100% {
+      opacity: 0.5;
+      bottom: -100px;
+      right: -100px;
+    }
+    25% {
+      bottom: 30px; /* Adjusted for tighter placement */
+      right: 30px; /* Adjusted for tighter placement */
+    }
+    75% {
+      bottom: 30px; /* Adjusted for tighter placement */
+      right: 30px; /* Adjusted for tighter placement */
+    }
+  }
+  
+  /* Optional: add text styling */
+  .text-content {
+    width: 50%;
+    padding: 20px;
+  }
+  

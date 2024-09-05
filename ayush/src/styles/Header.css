@@ -1,0 +1,47 @@
+/* src/styles/Header.css */
+
+/* Container styling for positioning */
+.header-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styling the header background with an oval shape */
+  .header-bg {
+    background-color: #333;
+    color: white;
+    padding: 20px 60px; /* Increase horizontal padding for more length */
+    border-radius: 50% / 30%; /* Adjust vertical and horizontal curvature */
+    display: inline-block; /* Ensures the oval shape */
+    width: auto;
+    max-width: 700px; /* Adjust width to be longer */
+  }
+  
+  /* Header title styling */
+  .header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Navigation styling */
+  .header-nav {
+    margin-top: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Increase spacing between links if needed */
+    font-size: 1rem;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
